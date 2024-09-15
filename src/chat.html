@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="../accents/style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-list">
+            <h2>Список чатов</h2>
+            <ul>
+                <li onclick="selectChat('Chat 1')">Чат 1</li>
+                <li onclick="selectChat('Chat 2')">Чат 2</li>
+                <li onclick="selectChat('Chat 3')">Чат 3</li>
+            </ul>
+        </div>
+        <div class="chat-window">
+            <h2 id="chat-title">Выберите чат</h2>
+            <div class="messages" id="chat-messages">
+                <!-- Сообщения будут добавляться сюда -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Напишите сообщение...">
+                <button onclick="sendMessage()">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/chat.js"></script>
+</body>
+</html>
